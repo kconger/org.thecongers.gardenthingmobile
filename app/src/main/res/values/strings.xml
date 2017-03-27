@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">GardenThing Mobile</string>
+
+    <string name="error_message">Failed to get results. Please try again.</string>
+    <string name="host_message">Set your host setting under Settings or try Discovery</string>
+    <string name="discovered_message">GardenThing Discovered at </string>
+    <string name="password_message">Gardener passwords do not match</string>
+    <string name="saved_message">Settings Saved</string>
+    <string name="saving_error_message">Error saving settings</string>
+    <string name="error_saving_passwords_message">gardener Passwords didn\'t match</string>
+
+    <string name="temperature_label">Temperature</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="ambient_label">Ambient Light</string>
+    <string name="ir_label">Infrared Light</string>
+    <string name="lux_label">LUX</string>
+    <string name="co2_label">Carbon Dioxide</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_discovery">Discovery</string>
+    <string name="menu_settings">App Settings</string>
+    <string name="menu_gt_settings">GardenThing Settings</string>
+
+    <string name="discovery_header">Tap to add GardenThing</string>
+
+    <string name="graph_domain_title">Time</string>
+    <string name="lux_graph_title">Garden Light LUX</string>
+    <string name="lux_graph_range_title">LUX</string>
+    <string name="ir_graph_title">Garden Infrared Light</string>
+    <string name="ir_graph_range_title">Infrared</string>
+    <string name="humidity_graph_title">Garden Humidity</string>
+    <string name="humidity_graph_range_title">Humidity(%)</string>
+    <string name="co2_graph_title">Garden CO2</string>
+    <string name="co2_graph_range_title">CO2(ppm)</string>
+    <string name="temperature_graph_title">Garden Temperature</string>
+    <string name="temperature_graph_range_title">Temperature</string>
+    <string name="ambient_graph_title">Garden Ambient Light</string>
+    <string name="ambient_graph_range_title">Ambient Light</string>
+    <string name="soil_moisture_graph_range_title">Moisture</string>
+
+    <string name="title_activity_ggsettings">GardenThing Settings</string>
+    <string name="gtsettings_general_label">General</string>
+    <string name="gtsettings_password">gardener password</string>
+    <string name="gtsettings_password2">gardener password again</string>
+    <string name="gtsettings_sensors_label">Sensors</string>
+    <string name="gtsettings_sensors_disable">Sensors Disable</string>
+    <string name="gtsettings_sensors_polling_period">Polling Period</string>
+    <string-array name="gtsettings_sensors_polling_periods">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string name="gtsettings_sensors_co2">CO2 Sensor</string>
+    <string name="gtsettings_sensors_light">Light Sensor</string>
+    <string name="gtsettings_sensors_th">Temperature and Humidity Sensor</string>
+    <string name="gtsettings_sensors_temp_unit">Fahrenheit</string>
+    <string name="gtsettings_sensors_th_port">Temperature Humidity Sensor Port</string>
+    <string-array name="gtsettings_sensors_th_ports">
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="gtsettings_sensors_moisture1">Moisture Sensor 1</string>
+    <string name="gtsettings_sensors_moisture1_label">Moisture Sensor 1 Label</string>
+    <string name="gtsettings_sensors_moisture2">Moisture Sensor 2</string>
+    <string name="gtsettings_sensors_moisture2_label">Moisture Sensor 2 Label</string>
+    <string name="gtsettings_sensors_moisture3">Moisture Sensor 3</string>
+    <string name="gtsettings_sensors_moisture3_label">Moisture Sensor 3 Label</string>
+    <string name="gtsettings_alerts_low">Low Threshold</string>
+    <string name="gtsettings_alerts_high">High Threshold</string>
+    <string name="gtsettings_alerts_moisture">Moisture Alerts</string>
+    <string name="gtsettings_alerts_temperature">Temperature Alerts</string>
+    <string name="gtsettings_alerts_humidity">Humidity Alerts</string>
+    <string name="gtsettings_alerts_light">Ambient Light Alerts</string>
+    <string name="gtsettings_alerts_co2">CO2 Alerts</string>
+    <string name="menu_purge_database">Purge Database</string>
+
+    <string name="alert_message_yes">Yes</string>
+    <string name="alert_message_no">No</string>
+    <string name="alert_message_purge_database">Remove all sensor data?</string>
+</resources>

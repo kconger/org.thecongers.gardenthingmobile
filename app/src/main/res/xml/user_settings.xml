@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:title="Grove Garden Address"
+        android:summary="DNS or IP of your Grove Garden"
+        android:defaultValue="grove-garden.local"
+        android:key="prefHost"
+        />
+    <EditTextPreference
+        android:title="Grove Garden Username"
+        android:summary="Username of your Grove Garden"
+        android:defaultValue="gardener"
+        android:key="prefUsername"
+        />
+    <EditTextPreference
+        android:title="Grove Garden Pasword"
+        android:inputType="textPassword"
+        android:summary="Password of your Grove Garden"
+        android:defaultValue="secret"
+        android:key="prefPassword"
+        />
+</PreferenceScreen>
