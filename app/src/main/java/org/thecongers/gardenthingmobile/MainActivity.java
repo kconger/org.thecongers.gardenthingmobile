@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String gardenThingResults) {
             if (gardenThingResults != null && !gardenThingResults.equals("")) {
                 String temperature = "";
-                String temperatureUnit = "";
+                String temperatureUnit = "C";
                 String humidity = "";
                 String humidityUnit = "%";
                 String ambient = "";
@@ -132,7 +132,11 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                // TODO: get temp unit and convert
+                if (sharedPrefs.getBoolean("prefFahrenheit", false)) {
+                    temperatureUnit = "F";
+                    float temperatureC = convertCtoF(Double.parseDouble(temperature));
+                    temperature = Integer.toString((int) Math.round(temperatureC));
+                }
                 mTemperature.setText(temperature + temperatureUnit);
                 mHumidity.setText(humidity + humidityUnit);
                 mAmbientLight.setText(ambient);
@@ -304,5 +308,9 @@ public class MainActivity extends AppCompatActivity {
         startChildActivityIntent.putExtras(b);
         startActivity(startChildActivityIntent);
 
+    }
+
+    private float convertCtoF(double temp) {
+        return (float) temp * 9 / 5 + 32;
     }
 }

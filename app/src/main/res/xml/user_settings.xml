@@ -19,4 +19,9 @@
         android:defaultValue="secret"
         android:key="prefPassword"
         />
+    <CheckBoxPreference
+        android:title="Fahrenheit"
+        android:summary="Display temperatures in Fahrenheit"
+        android:key="prefFahrenheit"
+        />
 </PreferenceScreen>
