@@ -2,8 +2,7 @@
     <string name="app_name">GardenThing Mobile</string>
 
     <string name="error_message">Failed to get results. Please try again.</string>
-    <string name="host_message">Set your host setting under Settings or try Discovery</string>
-    <string name="discovered_message">GardenThing Discovered at </string>
+    <string name="host_message">Set your host setting under Settings</string>
     <string name="password_message">Gardener passwords do not match</string>
     <string name="saved_message">Settings Saved</string>
     <string name="saving_error_message">Error saving settings</string>
@@ -17,7 +16,6 @@
     <string name="co2_label">Carbon Dioxide</string>
 
     <string name="menu_refresh">Refresh</string>
-    <string name="menu_discovery">Discovery</string>
     <string name="menu_settings">App Settings</string>
     <string name="menu_gt_settings">GardenThing Settings</string>
 

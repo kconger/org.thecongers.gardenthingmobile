@@ -64,11 +64,7 @@ public class MainActivity extends AppCompatActivity {
         refresh();
     }
 
-    /**
-     * This method constructs the URL (using {@link NetworkUtils}) for the github repository you'd
-     * like to find, displays that URL in a TextView, and finally fires off an AsyncTask to perform
-     * the GET request using our {@link GardenThingQueryTask}
-     */
+    // Build http query and query GardenThing
     private void makeGardenThingQuery(String query) {
         URL groveGardenUrl = NetworkUtils.buildUrl(host,query);
         new GardenThingQueryTask().execute(groveGardenUrl);
@@ -165,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_gt_settings:
-                // garden thing settings was selected
+                // GardenThing settings was selected
                 if (!host.equals("")) {
                     Intent startGTSettingsActivityIntent = new Intent(MainActivity.this, GTSettingsActivity.class);
                     startActivityForResult(startGTSettingsActivityIntent, SETTINGS_RESULT);
@@ -174,12 +170,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;
             case R.id.action_settings:
-                // settings was selected
+                // Settings was selected
                 Intent startSettingsActivityIntent = new Intent(MainActivity.this,  UserSettingActivity.class);
                 startActivityForResult(startSettingsActivityIntent, SETTINGS_RESULT);
                 return true;
             case R.id.action_refresh:
-                // refresh was selected
+                // Refresh was selected
                 refresh();
                 return true;
             default:
@@ -187,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Runs when settings are updated
+    // Runs when settings are updated
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
@@ -198,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Update UI when settings are updated
+    // Refresh current values
     private void refresh()
     {
         host = sharedPrefs.getString("prefHost", "");
