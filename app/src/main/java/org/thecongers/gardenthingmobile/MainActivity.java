@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 if (sharedPrefs.getBoolean("prefFahrenheit", false)) {
                     temperatureUnit = "F";
                     float temperatureC = convertCtoF(Double.parseDouble(temperature));
-                    temperature = Integer.toString((int) Math.round(temperatureC));
+                    temperature = Integer.toString(Math.round(temperatureC));
                 }
                 mTemperature.setText(temperature + temperatureUnit);
                 mHumidity.setText(humidity + humidityUnit);
